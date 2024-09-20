@@ -2,7 +2,8 @@ import pikepdf
 import time
 from colorama import Fore
 
-password_file = open("passwordfile.txt")
+#create a .txt file with your passwords and Add your password file here
+password_file = open("yourPasswordFile.txt")
 
 i = 0
 start_time = time.time()
@@ -10,9 +11,10 @@ for password in password_file:
     i += 1
     print(Fore.RED+f"\r {i} Password is tested {password.strip()}", end = "")
     try:
-        with pikepdf.open("2024.pdf",password = password.strip("\n")) as pdf:
+        #Replace 2024
+        with pikepdf.open("yourPDFfile.pdf",password = password.strip("\n")) as pdf:
             # Added this line to save the decrypted vision of the file inside our project folder.
-            extract = pdf.save("unlocked.pdf")
+            extract = pdf.save("yourDecrypted.pdf")
             end_time = time.time()
 
         print("\n")
