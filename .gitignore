@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 
 #test file
-2024.pdf
-passwordfile.txt
-unlocked.pdf
+yourPDFfile.pdf
+yourPasswordFile.txt
+yourDecrypted.pdf
 
 # C extensions
 *.so
