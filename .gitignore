@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#test file
+2024.pdf
+passwordfile.txt
+unlocked.pdf
+
 # C extensions
 *.so
 
